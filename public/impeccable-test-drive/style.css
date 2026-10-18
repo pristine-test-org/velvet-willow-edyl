@@ -1,0 +1,22 @@
+:root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+body { margin: 0; }
+header, main { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+header { display: flex; justify-content: space-between; align-items: center; }
+header a, .mark { color: #2f7d4f; }
+.mark { font-weight: 700; }
+/* Intentional, for Impeccable's test drive: gradient text. */
+.gradient {
+  background: linear-gradient(90deg, #2f7d4f, #c24d9b);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+}
+/* Intentional, for Impeccable's test drive: low-contrast text. */
+.soft { color: #c8c8c8; }
+/* Intentional, for Impeccable's test drive: body text flush with the viewport edge. */
+.edge { max-width: none; margin: 1.5rem -1rem; padding: 0; }
+/* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+.tiny { font-size: 10px; color: #2f7d4f; }
+.bar { margin-top: 2rem; height: 0.75rem; background: #eee; }
+/* Intentional, for Impeccable's test drive: transition on a layout property. */
+.bar span { display: block; height: 100%; width: 30%; background: #2f7d4f; transition: width 0.3s; }
+.bar:hover span { width: 100%; }
